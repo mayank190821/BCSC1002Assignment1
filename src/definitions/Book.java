@@ -11,6 +11,17 @@ public class Book {
     private String authorName;
     private String ISBNNumber;
 
+    /**
+     * @param bookName   Name of the books.
+     * @param authorName Name of the book author.
+     * @param ISBNNumber ISBN number of the book.
+     */
+    public Book(String bookName, String authorName, String ISBNNumber) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.ISBNNumber = ISBNNumber;
+    }
+
     public String getBookName() {
         return bookName;
     }
