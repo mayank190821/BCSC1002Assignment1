@@ -6,5 +6,8 @@
  * */
 package definitions;
 
-public class Book {
+public class  Book {
+    private String bookName;
+    private String authorName;
+    private String ISBNNumber;
 }
