@@ -14,6 +14,23 @@ public class Student {
     private long universityRollNumber;
     private int numberOfBooksIssued;
 
+    /**
+     * @param nameOfBooksIssued    Name of the book issued.
+     * @param firstName            First name of the student.
+     * @param middleName           Middle name of the student.
+     * @param lastName             Last name of the student.
+     * @param universityRollNumber University roll number of the student.
+     * @param numberOfBooksIssued  Number of the books issued by the students.
+     */
+    public Student(Book[] nameOfBooksIssued, String firstName, String middleName, String lastName, long universityRollNumber, int numberOfBooksIssued) {
+        this.nameOfBooksIssued = nameOfBooksIssued;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
     public Book[] getNameOfBooksIssued() {
         return nameOfBooksIssued;
     }
