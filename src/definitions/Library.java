@@ -6,8 +6,17 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] availableBooks;
+
+    /**
+     * @param availableBooks Store all the books that are currently available.
+     */
+    public Library(Book[] availableBooks) {
+        this.availableBooks = availableBooks;
+    }
 
     public Book[] getAvailableBooks() {
         return availableBooks;
@@ -15,5 +24,12 @@ public class Library {
 
     public void setAvailableBooks(Book[] availableBooks) {
         this.availableBooks = availableBooks;
+    }
+
+    @Override
+    public String toString() {
+        return "Library{" +
+                "availableBooks=" + Arrays.toString(availableBooks) +
+                '}';
     }
 }
