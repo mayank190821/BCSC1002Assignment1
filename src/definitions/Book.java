@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: Mayank Bhugra
  *  Date: 21/08/20
  *  Time: 3:49 PM
  *  File Name : Book.java
@@ -22,6 +22,8 @@ public class Book {
         this.bookName = bookName;
         this.authorName = authorName;
         this.ISBNNumber = ISBNNumber;
+    }
+    public Book(){
     }
 
     @Override
@@ -60,8 +62,7 @@ public class Book {
         return authorName;
     }
 
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
+    public void setAuthorName(String authorName) {this.authorName = authorName;
     }
 
     public String getISBNNumber() {

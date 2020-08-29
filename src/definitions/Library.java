@@ -1,5 +1,5 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
+ *  User: Mayank Bhugra
  *  Date: 21/08/20
  *  Time: 3:50 PM
  *  File Name : Library.java
@@ -9,13 +9,21 @@ package definitions;
 import java.util.Arrays;
 
 public class Library {
-    private Book[] availableBooks;
+    private Book[] availableBooks = new Book[3];
 
-    /**
-     * @param availableBooks Store all the books that are currently available.
-     */
-    public Library(Book[] availableBooks) {
-        this.availableBooks = availableBooks;
+    public Library() {
+        Book book = new Book();
+        book.setBookName("Book1");
+        book.setAuthorName("Author1");
+        book.setISBNNumber("12-8-9-7-6");
+        availableBooks[0] = book;
+        book.setBookName("Book2");
+        book.setAuthorName("Author2");
+        book.setISBNNumber("8-96-5-8-7");
+        availableBooks[1] = book;
+        book.setBookName("Book3");
+        book.setAuthorName("Author3");
+        book.setISBNNumber("15-48-29-37");
     }
 
     public Book[] getAvailableBooks() {
